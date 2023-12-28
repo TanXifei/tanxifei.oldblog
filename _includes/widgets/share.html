@@ -1,0 +1,35 @@
+{%- if site.template.widgets contains "share" -%}
+<div class = "rightElem rightBtns wxshare">
+    
+    {% include functions/get_share.html %}
+
+    {% assign twShareLink = "http://twitter.com/share?url=" | append: surl | append: "&text=" | append: stitle | append: "&via=" | append: origin | uri_escape %}
+
+    <a class = "twitter-share-button btn nf nf-mdi-twitter" target = "_blank" href = "{{ twShareLink }}">
+    </a>
+
+    <a class = "btn nf nf-mdi-facebook_box" target = "_blank" href = "https://www.facebook.com/sharer/sharer.php?u={{ surl }}">
+    </a>
+
+    {% assign qqShareLink = "http://connect.qq.com/widget/shareqq/iframe_index.html?url=" | append: surl | append: "&title=" | append: stitle | append: "&desc=" | append: description | append: "&pics=" | append: picture | append: "&site=" | append: origin | uri_escape %}
+
+    <a class = "btn nf nf-mdi-qqchat" target = "_blank" href = "{{ qqShareLink }}">
+    </a>
+
+    {% assign wbShareLink = "http://service.weibo.com/share/share.php?type=3&count=1&url=" | append: surl | append: "&title=" | append: stitle | uri_escape %}
+
+    <a class = "btn nf nf-fa-weibo" target = "_blank" href = "{{ wbShareLink }}">
+    </a>
+
+    <a class = "btn nf nf-fa-weixin" target = "_blank" href = "{{ qqShareLink }}">
+    </a>
+</div>
+
+<style>
+    @media screen and (max-width: 650px){
+        .wxshare{
+            display: none;
+        }
+    }
+</style>
+{%- endif -%}
