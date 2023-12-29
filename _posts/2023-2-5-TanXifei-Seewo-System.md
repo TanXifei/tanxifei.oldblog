@@ -1,9 +1,9 @@
 ---
-title: TanXifei Seewo System
 layout: post
-background: https://sway.office.com/s/JRoETfcAi3pTmiXl/images/37gRLghktty4zg?quality=1280&allowAnimation=true
-subtitle: 几乎要鸽掉的破项目
-artist: artstation.com/antoinecollignon
+title:  "TanXifei Seewo System"
+date:   2023-12-31
+excerpt: "几乎要鸽掉的破项目"
+image: "/images/pic02.jpg"
 ---
 
 # TanXifei Seewo System V2.1 P2
