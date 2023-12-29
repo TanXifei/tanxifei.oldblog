@@ -1,5 +1,5 @@
 ///
-/// Forty by HTML5 UP
+/// Massively by HTML5 UP
 /// html5up.net | @ajlkn
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
@@ -13,58 +13,100 @@
 	}
 
 	header {
+		cursor: default;
+
+		> .date {
+			display: block;
+			font-size: 0.8rem;
+			height: 1;
+			margin: 0 0 (_size(element-margin) * 0.5) 0;
+			position: relative;
+		}
+
+		> p {
+			font-style: italic;
+		}
+
+		> h1 + p {
+			font-size: 1.1rem;
+			margin-top: -0.5rem;
+			line-height: 2;
+		}
+
+		> h2 + p {
+			font-size: 1rem;
+			margin-top: -0.75rem;
+		}
+
+		> h3 + p {
+			font-size: 0.9rem;
+			margin-top: -0.75rem;
+		}
+
+		> h4 + p {
+			font-size: 0.8rem;
+			margin-top: -0.75rem;
+		}
+
 		&.major {
-			width: -moz-max-content;
-			width: -webkit-max-content;
-			width: -ms-max-content;
-			width: max-content;
-      max-width: 100%;
-			margin-bottom: _size(element-margin);
+			margin: 0 0 (_size(element-margin) * 2) 0;
+			text-align: center;
 
-			> :first-child {
-				  margin-bottom: 0;
-				  width: calc(100% + 0.5em);
-
-				  &:after {
-					    content: '';
-					    background-color: _palette(fg-bold);
-					    display: block;
-					    height: 2px;
-					    margin: 0.325em 0 0.5em 0;
-					    width: 100%;
-				  }
+			> :last-child {
+				margin-bottom: 0;
 			}
 
 			> p {
-				font-size: 0.7em;
-				font-weight: _font(weight-bold);
-				letter-spacing: _font(letter-spacing-alt);
-				margin-bottom: 0;
-				text-transform: uppercase;
+				margin-top: 0;
+				text-align: center;
 			}
 
-			body.is-ie & {
-				> :first-child {
-					&:after {
-						max-width: 9em;
-					}
+			> .date {
+				font-size: 1rem;
+				margin: 0 0 (_size(element-margin) * 2) 0;
+
+				&:before, &:after {
+					content: '';
+					display: block;
+					position: absolute;
+					top: 50%;
+					width: calc(50% - 6rem);
+					border-top: solid 2px;
 				}
 
-				> h1 {
-					&:after {
-						max-width: 100% !important;
-					}
+				&:before {
+					left: 0;
 				}
+
+				&:after {
+					right: 0;
+				}
+			}
+		}
+
+		@include breakpoint(medium) {
+			br {
+				display: none;
 			}
 		}
 
 		@include breakpoint(small) {
 			&.major {
-				> p {
-					br {
-						display: none;
+				margin: 0 0 _size(element-margin) 0;
+			}
+		}
+	}
+
+	@mixin color-section($p: null) {
+		header {
+			&.major {
+				.date {
+					&:before, &:after {
+						border-top-color: _palette($p, border);
 					}
 				}
 			}
 		}
 	}
+
+	@include color-section;

@@ -1,18 +1,55 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <!--
-	Forty by HTML5 UP
+	Massively by HTML5 UP
 	html5up.net | @ajlkn
+  Jekyll integration by somiibo.com
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
+	<head>
+    {% include head.html %}
+	</head>
+	<body class="is-loading">
 
-{% include head.html %}
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
 
-<body>
-    <script type="text/javascript">document.body.classList.add("is-loading");</script>
+				<!-- Header -->
+				<header id="header">
+					<a href="{{ "/" | absolute_url }}" class="logo">{{site.title}}</a>
+				</header>
 
-    {% include header.html %} {{ content }} {% include footer.html %}
+				<!-- Nav -->
+					<nav id="nav">
 
-</body>
+            {% include nav.html %}
 
+					</nav>
+
+				<!-- Main -->
+				<div id="main">
+
+					<!-- Post -->
+					<section class="post">
+						<p>{{content}}</p>
+					</section>
+
+					<!-- Footer -->
+						<footer>
+              <ul class="actions">
+								<li><a href="{{ "/blog/" | absolute_url }}" class="button">Our Blog</a></li>
+              </ul>
+						</footer>
+					</div>
+
+				<!-- Footer -->
+        {% include foot.html %}
+
+			</div>
+
+			<!-- Scripts -->
+			{% include scripts-main.html %}
+			{% include tracking.html %}
+
+	</body>
 </html>

@@ -1,27 +1,25 @@
 ///
-/// Forty by HTML5 UP
+/// Massively by HTML5 UP
 /// html5up.net | @ajlkn
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
 
 /* Image */
 
-img {
-    max-width: 100%;
-}
-
-.image {
+	.image {
 		border: 0;
+		border-radius: _size(border-radius);
 		display: inline-block;
 		position: relative;
 
 		img {
+			border-radius: _size(border-radius);
 			display: block;
 		}
 
 		&.left,
 		&.right {
-			max-width: 30%;
+			max-width: 40%;
 
 			img {
 				width: 100%;
@@ -30,20 +28,24 @@ img {
 
 		&.left {
 			float: left;
-			margin: 0 1.5em 1.25em 0;
-			top: 0.25em;
+			margin: 0 2rem 2rem 0;
+			top: 0.75rem;
 		}
 
 		&.right {
 			float: right;
-			margin: 0 0 1.25em 1.5em;
-			top: 0.25em;
+			margin: 0 0 2rem 2rem;
+			top: 0.75rem;
 		}
 
 		&.fit {
 			display: block;
-			margin: 0 0 _size(element-margin) 0;
+			margin: (_size(element-margin) * 1.25) 0;
 			width: 100%;
+
+			&:first-child {
+				margin-top: 0;
+			}
 
 			img {
 				width: 100%;
@@ -52,15 +54,39 @@ img {
 
 		&.main {
 			display: block;
-			margin: (_size(element-margin) * 1.25) 0;
+			margin: (_size(element-margin) * 2) 0;
 			width: 100%;
+
+			&:first-child {
+				margin-top: 0;
+			}
 
 			img {
 				width: 100%;
 			}
+		}
 
-			@include breakpoint(small) {
-				margin: (_size(element-margin) * 0.75) 0;
+		@include breakpoint(small) {
+			&.fit {
+				margin: _size(element-margin) 0;
+			}
+
+			&.main {
+				margin: _size(element-margin) 0;
+			}
+		}
+	}
+
+	a.image {
+		overflow: hidden;
+
+		img {
+			@include vendor('transition', 'transform #{_duration(transition)} ease-out');
+		}
+
+		&:hover {
+			img {
+				@include vendor('transform', 'scale(1.05)');
 			}
 		}
 	}
