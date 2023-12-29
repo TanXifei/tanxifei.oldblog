@@ -1,7 +1,7 @@
 # Site
-title:              Massively
-bio:                'Jekyll version of the Massively theme by HTML5UP'
-description:        "Jekyll version of the Massively theme by HTML5UP"
+title:              TanXifei
+bio:                '一个普通的学生~'
+description:        "一个普通的学生~"
 locale:             zh_cn
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
@@ -17,7 +17,7 @@ instagram:
 github:             https://github.com/TanXifei/
 
 # personal
-location:           
+location:           蒙德城
 phone:              
 email:              Tanxifei@outlook.com # change this to your email to receive free emails for your contact submissions via Slapform.com
 
