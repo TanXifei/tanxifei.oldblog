@@ -8,7 +8,8 @@ $background_image: '{{site.background_image}}';
 @import 'libs/functions';
 @import 'libs/mixins';
 @import 'libs/skel';
-@import 'font-awesome.min.css';
+// @import 'font-awesome.min.css';
+@import url('https://cdn.cbd.int/@fortawesome/fontawesome-free@latest/css/all.min.css');
 @import url('https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900');
 
 @font-face {
