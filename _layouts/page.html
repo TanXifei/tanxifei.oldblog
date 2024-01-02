@@ -6,50 +6,53 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-    {% include head.html %}
-	</head>
-	<body class="is-loading">
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+<head>
+	{% include head.html %}
+</head>
 
-				<!-- Header -->
-				<header id="header">
-					<a href="{{ "/" | absolute_url }}" class="logo">{{site.title}}</a>
-				</header>
+<body class="is-loading">
 
-				<!-- Nav -->
-					<nav id="nav">
+	<!-- Wrapper -->
+	<div id="wrapper" class="fade-in">
 
-            {% include nav.html %}
+		<!-- Header -->
+		<header id="header">
+			<a href="{{ " /" | absolute_url }}" class="logo">{{site.title}}</a>
+		</header>
 
-					</nav>
+		<!-- Nav -->
+		<nav id="nav">
 
-				<!-- Main -->
-				<div id="main">
+			{% include nav.html %}
 
-					<!-- Post -->
-					<section class="post">
-						<p>{{content}}</p>
-					</section>
+		</nav>
 
-					<!-- Footer -->
-						<footer>
-              <ul class="actions">
-								<li><a href="{{ "/blog/" | absolute_url }}" class="button">Our Blog</a></li>
-              </ul>
-						</footer>
-					</div>
+		<!-- Main -->
+		<div id="main">
 
-				<!-- Footer -->
-        {% include foot.html %}
+			<!-- Post -->
+			<section class="post">
+				<p>{{content}}</p>
+			</section>
 
-			</div>
+			<!-- Footer -->
+			<footer>
+				<ul class="actions">
+					<li><a href="{{ " /blog/" | absolute_url }}" class="button">关于低端谭汐霏</a></li>
+				</ul>
+			</footer>
+		</div>
 
-			<!-- Scripts -->
-			{% include scripts-main.html %}
-			{% include tracking.html %}
+		<!-- Footer -->
+		{% include foot.html %}
 
-	</body>
+	</div>
+
+	<!-- Scripts -->
+	{% include scripts-main.html %}
+	{% include tracking.html %}
+
+</body>
+
 </html>

@@ -6,56 +6,59 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-    {% include head.html %}
-	</head>
-	<body class="is-loading">
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+<head>
+	{% include head.html %}
+</head>
 
-				<!-- Header -->
-        <header id="header">
-          <a href="{{ "/" | absolute_url }}" class="logo">{{site.title}}</a>
-        </header>
+<body class="is-loading">
 
-				<!-- Nav -->
-					<nav id="nav">
+	<!-- Wrapper -->
+	<div id="wrapper" class="fade-in">
 
-            {% include nav.html %}
-						
-					</nav>
+		<!-- Header -->
+		<header id="header">
+			<a href="{{ " /" | absolute_url }}" class="logo">{{site.title}}</a>
+		</header>
 
-				<!-- Main -->
-				<div id="main">
-          <section class="post">
-    				<header class="major">
-      				<span class="date">{{page.date | date_to_string}}</span>
-      				<h1>{{page.title}}</h1>
-      				<p>{{page.excerpt}}</p>
-      			</header>
-      			<div class="image main"><img src="{{page.image}}" alt=""></div>
-      			<p>{{content}}</p>
-      		</section>
+		<!-- Nav -->
+		<nav id="nav">
 
-          <!-- <div class="comments-wrapper"></div> -->
+			{% include nav.html %}
 
-					<!-- Footer -->
-						<footer>
-              <ul class="actions">
-                <li><a href="{{ "/blog/" | absolute_url }}" class="button">Our Blog</a></li>
-              </ul>
-						</footer>
-					</div>
+		</nav>
 
-				<!-- Footer -->
-        {% include foot.html %}
+		<!-- Main -->
+		<div id="main">
+			<section class="post">
+				<header class="major">
+					<span class="date">{{page.date | date_to_string}}</span>
+					<h1>{{page.title}}</h1>
+					<p>{{page.excerpt}}</p>
+				</header>
+				<div class="image main"><img src="{{page.image}}" alt=""></div>
+				<p>{{content}}</p>
+			</section>
 
-			</div>
+			<!-- <div class="comments-wrapper"></div> -->
 
-      <!-- Scripts -->
-  		{% include scripts-main.html %}
-			{% include tracking.html %}
+			<!-- Footer -->
+			<footer>
+				<ul class="actions">
+					<li><a href="{{ " /blog/" | absolute_url }}" class="button">关于低端谭汐霏</a></li>
+				</ul>
+			</footer>
+		</div>
 
-	</body>
+		<!-- Footer -->
+		{% include foot.html %}
+
+	</div>
+
+	<!-- Scripts -->
+	{% include scripts-main.html %}
+	{% include tracking.html %}
+
+</body>
+
 </html>
