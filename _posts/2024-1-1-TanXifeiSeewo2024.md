@@ -10,12 +10,14 @@ SHA1    ：DA20822B2107DED8666FE97248002C05492516D0
 CRC32   ：5CCE0984
 ```
 
-## 镜像信息
+## 镜像信息 四代机以上请选择含希沃桌面的版本！
 
 | INDEX | NAME                                                 | TOTALBYTES  |
 | ----- | ---------------------------------------------------- | ----------- |
 | 1     | TanXifei Win10_22H2  for Seewo(Without SeewoDesktop) | 24122740709 |
 | 2     | TanXifei Win10_22H2  for Seewo(With SeewoDesktop)    | 24828903206 |
+
+##### 系统自带部分驱动，但不保证六代机可完美驱动
 
 ## 安装软件
 
