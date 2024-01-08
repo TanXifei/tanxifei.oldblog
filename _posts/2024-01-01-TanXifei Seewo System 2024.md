@@ -3,7 +3,7 @@ layout: post
 title:  "TanXifei Seewo System 2024"
 date:   2024-01-01
 excerpt: "几乎要鸽掉的破项目"
-image: "\images\大牌封面\3.jpg"
+image: "/images/dpfm/3.jpg"
 ---
 
 
@@ -22,12 +22,12 @@ CRC32   ：5CCE0984
 
 ## 镜像信息 四代机以上请选择含希沃桌面的版本！
 
-| INDEX | NAME                                                 | TOTALBYTES  |
-| ----- | ---------------------------------------------------- | ----------- |
-| 1     | TanXifei Win10_22H2  for Seewo(Without SeewoDesktop) | 24122740709 |
-| 2     | TanXifei Win10_22H2  for Seewo(With SeewoDesktop)    | 24828903206 |
+| 序号 | 分卷名称                                             | TOTALBYTES  |
+| ---- | ---------------------------------------------------- | ----------- |
+| 1    | TanXifei Win10_22H2  for Seewo(Without SeewoDesktop) | 24122740709 |
+| 2    | TanXifei Win10_22H2  for Seewo(With SeewoDesktop)    | 24828903206 |
 
-##### 系统自带部分驱动，但不保证五/六代机的冷门硬件能驱动，请从点击此处进入下载页下载五/六代机驱动
+##### 系统自带部分驱动，但不保证五/六代机的冷门硬件能驱动，请[点击此处](https://d.oxyxc.top/%E6%99%BA%E8%83%BD%E7%99%BD%E6%9D%BFPC%E6%A8%A1%E5%9D%97%E7%B3%BB%E7%BB%9F%E9%95%9C%E5%83%8F/seewo/!Files/5%E4%BB%A3%E3%80%816%E4%BB%A3%E6%9C%BA%E5%9E%8B%E9%A9%B1%E5%8A%A8%E7%BB%84%E4%BB%B6)进入下载页下载五/六代机驱动
 
 ## 安装软件
 
