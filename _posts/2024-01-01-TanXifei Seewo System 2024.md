@@ -1,3 +1,13 @@
+---
+layout: post
+title:  "TanXifei Seewo System 2024"
+date:   2024-01-01
+excerpt: "几乎要鸽掉的破项目"
+image: "\images\大牌封面\3.jpg"
+---
+
+
+
 # TanXifei Seewo System 2024 ver
 
 ## 文件校验
@@ -17,7 +27,7 @@ CRC32   ：5CCE0984
 | 1     | TanXifei Win10_22H2  for Seewo(Without SeewoDesktop) | 24122740709 |
 | 2     | TanXifei Win10_22H2  for Seewo(With SeewoDesktop)    | 24828903206 |
 
-##### 系统自带部分驱动，但不保证六代机可完美驱动
+##### 系统自带部分驱动，但不保证五/六代机的冷门硬件能驱动，请从点击此处进入下载页下载五/六代机驱动
 
 ## 安装软件
 

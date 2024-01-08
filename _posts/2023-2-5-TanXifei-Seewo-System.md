@@ -3,7 +3,7 @@ layout: post
 title:  "TanXifei Seewo System"
 date:   2023-12-31
 excerpt: "几乎要鸽掉的破项目"
-image: "/images/pic02.jpg"
+image: "\images\大牌封面\2.jpg"
 ---
 
 # TanXifei Seewo System V2.1 P2
