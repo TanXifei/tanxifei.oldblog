@@ -22,7 +22,7 @@ phone:
 email:              Tanxifei@outlook.com # change this to your email to receive free emails for your contact submissions via Slapform.com
 
 # Other
-background_image:   https://t.mwm.moe/ysz
+background_image:   https://api.dreamofice.cn/hoyorandom/img
 # Tip: The color palette and other styles can be configured in /_sass/lib/_vars.scss
 slapform_thankyou_page: /thank-you
 
