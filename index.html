@@ -52,7 +52,16 @@ sitemap:
 							<article class="post featured">
 								<header class="major">
 									<h2><a href="#">{{site.title}}</a></h2>
-									<p>往下滚动打开新世界</p></a>
+									<p id="hitokoto_text"></p>
+									<script>
+										fetch('https://api.dreamofice.cn/hoyorandom/hitokoto')
+											.then(response => response.json())
+											.then(data => {
+											const hitokoto = document.querySelector('#hitokoto_text')
+											hitokoto.innerText = data.hitokoto
+											})
+											.catch(console.error)
+									</script>
 								</header>
 							</article>
 
