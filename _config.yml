@@ -1,7 +1,7 @@
 # Site
 title:              "谭汐霏の破站"
-bio:                '一个普通的学生~'
-description:        "一个普通的学生~"
+bio:                '一个来自广州的提米'
+description:        "一个来自广州的提米"
 locale:             zh_cn
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
@@ -22,7 +22,7 @@ phone:
 email:              Tanxifei@outlook.com # change this to your email to receive free emails for your contact submissions via Slapform.com
 
 # Other
-background_image:   https://api.dreamofice.cn/hoyorandom/img
+background_image:   /images/txf.png
 # Tip: The color palette and other styles can be configured in /_sass/lib/_vars.scss
 slapform_thankyou_page: /thank-you
 
