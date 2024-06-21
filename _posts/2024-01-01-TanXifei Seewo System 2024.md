@@ -3,7 +3,7 @@ layout: post
 title:  "TanXifei Seewo System 2024"
 date:   2024-01-01
 excerpt: "几乎要鸽掉的破项目"
-image: "/images/dpfm/3.jpg"
+image: "https://pic2.ziyuan.wang/user/tanxifei/2024/06/3_402f80f0696c4.jpg"
 ---
 
 
