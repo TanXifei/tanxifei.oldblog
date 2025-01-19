@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+  Jekyll integration by somiibo.com
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+    {% include head.html %}
+    <title>Checkbox and Button Example</title>
+<script type="text/javascript">
+function checkAllBoxes() {
+    // 获取所有的input元素，其中type为checkbox
+    var checkboxes = document.getElementsByName('option');
+    var button = document.getElementById('submitButton');
+    var allChecked = true;
+
+    // 检查每个复选框是否被选中
+    for (var i = 0; i < checkboxes.length; i++) {
+        if (!checkboxes[i].checked) {
+            allChecked = false;
+            break;
+        }
+    }
+
+    // 根据复选框的状态显示或隐藏按钮
+    button.style.display = allChecked ? 'block' : 'none';
+}
+
+// 当页面加载完成时，先检查一次复选框状态
+window.onload = function() {
+    checkAllBoxes();
+}
+</script>
+	</head>
+	<body class="is-loading">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+<body>
+
+<h3>Select all checkboxes to reveal the button:</h3>
+
+<!-- 四个复选框 -->
+<input type="checkbox" name="option" onclick="checkAllBoxes()">Option 1<br>
+<input type="checkbox" name="option" onclick="checkAllBoxes()">Option 2<br>
+<input type="checkbox" name="option" onclick="checkAllBoxes()">Option 3<br>
+<input type="checkbox" name="option" onclick="checkAllBoxes()">Option 4<br>
+
+<!-- 跳转按钮，初始状态下是隐藏的 -->
+<button id="submitButton" style="display:none;" onclick="location.href='http://example.com';">Go to Website</button>
+
+              
+
+				<!-- Footer -->
+        {% include foot.html %}
+
+			</div>
+
+		<!-- Scripts -->
+		{% include scripts-main.html %}
+    {% include tracking.html %}
+
+	</body>
+</html>
