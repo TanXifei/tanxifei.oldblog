@@ -30,7 +30,7 @@ image: "https://pic2.ziyuan.wang/user/tanxifei/2024/11/29_eee5fe351e766.jpg"
 
 <script type="text/javascript">
 function handleCheckboxClick(checkbox) {
-    alert('您选择了: ' + (checkbox.checked ? '已选中' : '未选中'));
+    alert('该行' + (checkbox.checked ? '已确认' : '未确认'));
     checkAllBoxes();
 }
 
