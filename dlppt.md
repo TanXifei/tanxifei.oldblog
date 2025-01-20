@@ -6,7 +6,7 @@ excerpt: "你是不是要下载？往下看"
 image: "https://pic2.ziyuan.wang/user/tanxifei/2024/06/2_b6074f2f90f12.jpg"
 ---
 
-# 下载PPT资源文件
+# 请务必仔细阅读说明
 
 ## 工程文件夹整体打包 不提供使用方法 请自行研究
 
@@ -14,8 +14,11 @@ image: "https://pic2.ziyuan.wang/user/tanxifei/2024/06/2_b6074f2f90f12.jpg"
 
 ### 导出外显/内显图片时 请将背景替换为黑色 便于嵌入
 
-# 请确认以下信息:
+## 请确认以下信息:
 
+### 阅读下面四行文字后 点击每行最后一个字
+
+### 正确点击后 会出现下载按钮
 <!-- 四个复选框 -->
 <label><input type="checkbox" name="option" onclick="checkAllBoxes()"> 我要下载的是<a href="https://www.bilibili.com/video/BV1W4cHeZErc" target="_blank">这个视频中</a>PPT的资源文件</label><br>
 <label><input type="checkbox" name="option" onclick="checkAllBoxes()"> 我知道这是整个工程文件打包</label><br>
