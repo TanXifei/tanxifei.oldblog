@@ -10,20 +10,20 @@ image: "https://pic2.ziyuan.wang/user/tanxifei/2024/11/29_eee5fe351e766.jpg"
 
 ## 工程文件夹整体打包 不提供使用方法 请自行研究
 
+## 内显“司机” “检修”过于复杂 能力限制没有制作
+
 ### 制作外显/内显界面时 建议复制全显进行修改
 
 ### 导出外显/内显图片时 请将背景替换为黑色 便于嵌入
 
 ## 请确认以下信息:
 
-### 阅读下面四行文字后 点击每行最后一个字
-
-### 正确点击后 会出现下载按钮
+### 阅读下面四行文字后 点击每行最后一个字，按顺序正确点击后 会出现下载按钮
 <!-- 四个复选框 -->
 <label><input type="checkbox" name="option" onclick="handleCheckboxClick(this)"> 我要下载的是<a href="https://www.bilibili.com/video/BV1W4cHeZErc" target="_blank">这个视频中</a>PPT的资源文件</label><br>
 <label><input type="checkbox" name="option" onclick="handleCheckboxClick(this)"> 我知道这是整个工程文件打包</label><br>
-<label><input type="checkbox" name="option" onclick="handleCheckboxClick(this)"> 我明白视频用的是“组合 合并.pptx”里面的显示屏由其他PPT导出</label><br>
-<label><input type="checkbox" name="option" onclick="handleCheckboxClick(this)"> 转载请标明出处</label><br>
+<label><input type="checkbox" name="option" onclick="handleCheckboxClick(this)"> 我明白视频用的“组合 合并.pptx”里面的显示屏由其他PPT导出</label><br>
+<label><input type="checkbox" name="option" onclick="handleCheckboxClick(this)"> 我知道有部分元素缺失</label><br>
 
 <!-- 跳转按钮，初始状态下是隐藏的 -->
 <button id="submitButton" style="display:none;" onclick="location.href='https://www.123865.com/s/pvgrVv-wEuBh';">我要下载！</button>
