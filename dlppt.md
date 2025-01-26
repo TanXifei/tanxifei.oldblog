@@ -26,7 +26,7 @@ image: "https://pic2.ziyuan.wang/user/tanxifei/2024/11/29_eee5fe351e766.jpg"
 <label><input type="checkbox" name="option" onclick="handleCheckboxClick(this)"> 我知道有部分元素缺失</label><br>
 
 <!-- 跳转按钮，初始状态下是隐藏的 -->
-<button id="submitButton" style="display:none;" onclick="location.href='https://www.123865.com/s/pvgrVv-wEuBh';">我要下载！</button>
+<button id="submitButton" style="display:none;" onclick="location.href='https://dl.tanxifei.top/%E6%A8%A1%E6%8B%9F%E7%94%B5%E6%A2%AF%E7%B4%A0%E6%9D%90/%E4%B8%8A%E6%B5%B7%E4%B8%89%E8%8F%B1%E9%80%9A%E9%85%8D%E5%8C%96%E4%B8%A8%E6%A0%87%E9%85%8D%E4%B8%A8ND10+GD10+A11.zip';">我要下载！</button>
 
 <script type="text/javascript">
 function handleCheckboxClick(checkbox) {
