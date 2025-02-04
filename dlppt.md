@@ -52,7 +52,7 @@ function checkAllBoxes() {
     if (allChecked) {
         Swal.fire({
             title: '恭喜！',
-            text: '您已确认所有信息。\n下载密码：',
+            text: '您已确认所有信息。\n下载密码：tansmec',
             icon: 'success'
         });
     }
