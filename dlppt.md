@@ -16,21 +16,40 @@ image: "https://pic2.ziyuan.wang/user/tanxifei/2024/11/29_eee5fe351e766.jpg"
 
 ### 导出外显/内显图片时 请将背景替换为黑色 便于嵌入
 
-
 <!-- 四个复选框 -->
-<label><input type="checkbox" name="option" onclick="handleCheckboxClick(this)"> 我要下载的是<a href="https://www.bilibili.com/video/BV1W4cHeZErc" target="_blank">这个视频中</a>PPT的资源文件</label><br>
-<label><input type="checkbox" name="option" onclick="handleCheckboxClick(this)"> 我知道这是整个工程文件打包</label><br>
-<label><input type="checkbox" name="option" onclick="handleCheckboxClick(this)"> 我明白视频用的是“组合 合并.pptx”里面的显示屏由其他PPT导出</label><br>
-<label><input type="checkbox" name="option" onclick="handleCheckboxClick(this)"> 转载请标明出处</label><br>
+<div id="confirmation">
+    <label class="checkbox-label"><input type="checkbox" name="option" onclick="handleCheckboxClick(this)"> 我要下载的是<a href="https://www.bilibili.com/video/BV1W4cHeZErc" target="_blank">这个视频中</a>PPT的资源文件</label><br>
+    <label class="checkbox-label"><input type="checkbox" name="option" onclick="handleCheckboxClick(this)"> 我知道这是整个工程文件打包</label><br>
+    <label class="checkbox-label"><input type="checkbox" name="option" onclick="handleCheckboxClick(this)"> 我明白视频用的是“组合 合并.pptx”里面的显示屏由其他PPT导出</label><br>
+    <label class="checkbox-label"><input type="checkbox" name="option" onclick="handleCheckboxClick(this)"> 转载请标明出处</label><br>
+</div>
 
 <!-- 跳转按钮，初始状态下是隐藏的 -->
-<button id="submitButton" style="display:none;" onclick="location.href='https://dl.tanxifei.top/%E6%A8%A1%E6%8B%9F%E7%94%B5%E6%A2%AF%E7%B4%A0%E6%9D%90/%E4%B8%8A%E4%B8%89%E9%80%9A%E9%85%8D%E5%8C%96';">我要下载！</button>
+<button id="submitButton" style="display:none;" onclick="location.href='https://www.123865.com/s/pvgrVv-wEuBh';">我要下载！</button>
 
-<!-- 引入SweetAlert库 -->
+<style>
+/* 初始样式 */
+.checkbox-label {
+    padding: 5px;
+    margin: 2px 0;
+}
+
+/* 已选中的样式 */
+.checked-label {
+    background-color: #d4edda; /* 绿色背景 */
+}
+</style>
+
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <script type="text/javascript">
 function handleCheckboxClick(checkbox) {
+    var label = checkbox.parentElement;
+    if (checkbox.checked) {
+        label.classList.add('checked-label');
+    } else {
+        label.classList.remove('checked-label');
+    }
     checkAllBoxes();
 }
 
@@ -52,7 +71,7 @@ function checkAllBoxes() {
     if (allChecked) {
         Swal.fire({
             title: '恭喜！',
-            text: '您已确认所有信息。\n下载密码：tansmec',
+            text: '您已确认所有信息。\n下载密码:tansmec',
             icon: 'success'
         });
     }
