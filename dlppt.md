@@ -24,7 +24,7 @@ image: "https://pic2.ziyuan.wang/user/tanxifei/2024/11/29_eee5fe351e766.jpg"
 <label><input type="checkbox" name="option" onclick="handleCheckboxClick(this)"> 转载请标明出处</label><br>
 
 <!-- 跳转按钮，初始状态下是隐藏的 -->
-<button id="submitButton" style="display:none;" onclick="location.href='https://www.123865.com/s/pvgrVv-wEuBh';">我要下载！</button>
+<button id="submitButton" style="display:none;" onclick="location.href='https://dl.tanxifei.top/%E6%A8%A1%E6%8B%9F%E7%94%B5%E6%A2%AF%E7%B4%A0%E6%9D%90/%E4%B8%8A%E4%B8%89%E9%80%9A%E9%85%8D%E5%8C%96';">我要下载！</button>
 
 <!-- 引入SweetAlert库 -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
