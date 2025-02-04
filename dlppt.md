@@ -25,7 +25,7 @@ image: "https://pic2.ziyuan.wang/user/tanxifei/2024/11/29_eee5fe351e766.jpg"
 </div>
 
 <!-- 跳转按钮，初始状态下是隐藏的 -->
-<button id="submitButton" style="display:none;" onclick="location.href='https://www.123865.com/s/pvgrVv-wEuBh';">我要下载！</button>
+<button id="submitButton" style="display:none;" onclick="location.href='https://dl.tanxifei.top/%E6%A8%A1%E6%8B%9F%E7%94%B5%E6%A2%AF%E7%B4%A0%E6%9D%90/%E4%B8%8A%E4%B8%89%E9%80%9A%E9%85%8D%E5%8C%96';">我要下载！</button>
 
 <style>
 /* 初始样式 */
@@ -36,7 +36,7 @@ image: "https://pic2.ziyuan.wang/user/tanxifei/2024/11/29_eee5fe351e766.jpg"
 
 /* 已选中的样式 */
 .checked-label {
-    background-color: #d4edda; /* 绿色背景 */
+    background-color: #66CCFF; /* 绿色背景 */
 }
 </style>
 
