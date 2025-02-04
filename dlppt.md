@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "上海三菱电梯通配化装潢丨标配 PPT资源下载"
+title:  "上海三菱通配化装潢丨PPT资源下载"
 date:   2025-01-20
 excerpt: "你是不是要下载？往下看"
 image: "https://pic2.ziyuan.wang/user/tanxifei/2024/11/29_eee5fe351e766.jpg"
@@ -21,7 +21,7 @@ image: "https://pic2.ziyuan.wang/user/tanxifei/2024/11/29_eee5fe351e766.jpg"
     <label class="checkbox-label"><input type="checkbox" name="option" onclick="handleCheckboxClick(this)"> 我要下载的是<a href="https://www.bilibili.com/video/BV1W4cHeZErc" target="_blank">这个视频中</a>PPT的资源文件</label><br>
     <label class="checkbox-label"><input type="checkbox" name="option" onclick="handleCheckboxClick(this)"> 我知道这是整个工程文件打包</label><br>
     <label class="checkbox-label"><input type="checkbox" name="option" onclick="handleCheckboxClick(this)"> 我明白视频用的是“组合 合并.pptx”里面的显示屏由其他PPT导出</label><br>
-    <label class="checkbox-label"><input type="checkbox" name="option" onclick="handleCheckboxClick(this)"> 转载请标明出处</label><br>
+    <label class="checkbox-label"><input type="checkbox" name="option" onclick="handleCheckboxClick(this)"> 我不会用于评论区炫耀 转载会标明出处</label><br>
 </div>
 
 <!-- 跳转按钮，初始状态下是隐藏的 -->
@@ -70,8 +70,8 @@ function checkAllBoxes() {
     // 如果所有复选框都被选中，则弹出密码提示框
     if (allChecked) {
         Swal.fire({
-            title: '恭喜！',
-            text: '您已确认所有信息。\n下载密码:tansmec',
+            title: '哦。',
+            text: '您已通过人机验证并确认使用条款\n下载密码:tansmec',
             icon: 'success'
         });
     }
