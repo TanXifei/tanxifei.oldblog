@@ -71,7 +71,7 @@ function checkAllBoxes() {
     if (allChecked) {
         Swal.fire({
             title: '哦。',
-            text: '您已通过人机验证并确认使用条款\n下载密码:tansmec',
+            text: '您已通过人机验证并确认使用条款\n下载密码:srrbvcw8',
             icon: 'success'
         });
     }
