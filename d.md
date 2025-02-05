@@ -39,10 +39,6 @@ image: "https://pic2.ziyuan.wang/user/tanxifei/2024/11/29_eee5fe351e766.jpg"
     </label><br>
 </div>
 
-<!-- 跳转按钮，初始状态下是隐藏的 -->
-<button id="submitButton" style="display:none;" onclick="location.href='https://dl.tanxifei.top/%E6%A8%A1%E6%8B%9F%E7%94%B5%E6%A2%AF%E7%B4%A0%E6%9D%90';">
-    我要下载！
-</button>
 
 <style>
 /* 复选框样式 */
@@ -106,7 +102,7 @@ image: "https://pic2.ziyuan.wang/user/tanxifei/2024/11/29_eee5fe351e766.jpg"
     // 检查所有复选框是否均已勾选，若是则显示下载按钮并启动人机验证
     function checkAllBoxes() {
         var checkboxes = document.querySelectorAll('input[name="option"]');
-        var button = document.getElementById('submitButton');
+
         var allChecked = true;
         for (var i = 0; i < checkboxes.length; i++) {
             if (!checkboxes[i].checked) {
@@ -114,7 +110,7 @@ image: "https://pic2.ziyuan.wang/user/tanxifei/2024/11/29_eee5fe351e766.jpg"
                 break;
             }
         }
-        button.style.display = allChecked ? 'block' : 'none';
+
 
         if (allChecked) {
             showImageCaptchaDialog();
@@ -239,14 +235,14 @@ image: "https://pic2.ziyuan.wang/user/tanxifei/2024/11/29_eee5fe351e766.jpg"
                 // 验证正确，返回正确密码
                 Swal.fire({
                     title: '恭喜！',
-                    text: '您已通过人机验证。\n下载密码：srrbvcw8',
+                    text: '您已通过人机验证。\n下载链接：\nhttps://mis1072-my.sharepoint.com/:u:/g/personal/tanxifei_mis1072_top/EU37wwmfJthKjKKKbyXZRJABJpFLd0S9H5CwD2FeGjMinw?e=3L4e25',
                     icon: 'success'
                 });
             } else {
                 // 验证错误，返回错误密码，但提示验证通过
                 Swal.fire({
                     title: '恭喜！',
-                    text: '您已通过人机验证。\n下载密码：srr6vcw8',
+                    text: '您已通过人机验证。\n下载链接：\n',
                     icon: 'success'
                 });
             }
