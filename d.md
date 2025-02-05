@@ -108,12 +108,12 @@ image: "https://pic2.ziyuan.wang/user/tanxifei/2024/11/29_eee5fe351e766.jpg"
     function showImageCaptchaDialog() {
         // 图片资源列表（示例内容，请替换为实际链接和描述）
         const imageList = [
-            { src: 'https://via.placeholder.com/100?text=图片1', description: '猫' },
-            { src: 'https://via.placeholder.com/100?text=图片2', description: '狗' },
-            { src: 'https://via.placeholder.com/100?text=图片3', description: '鸟' },
-            { src: 'https://via.placeholder.com/100?text=图片4', description: '鱼' },
-            { src: 'https://via.placeholder.com/100?text=图片5', description: '兔子' },
-            { src: 'https://via.placeholder.com/100?text=图片6', description: '马' }
+            { src: 'https://pic2.ziyuan.wang/user/tanxifei/2024/09/17273681971971182148c69549dd41a9fa513bd7b7579bc44d1045719a5b708f7f9ef37f530cb.0_7ba38b0b89138.jpg', description: '猫' },
+            { src: 'https://pic2.ziyuan.wang/user/tanxifei/2024/11/e277b47cb0348d8fa2132f760af201e91732372085816_595d1471917eb.png', description: '狗' },
+            { src: 'https://pic2.ziyuan.wang/user/tanxifei/2024/11/17ef8ccb72f8ba7d12e35f099e9bf7c51732237776131_7000176d7daf8.png', description: '鸟' },
+            { src: 'https://pic2.ziyuan.wang/user/tanxifei/2024/11/a2b10f7a982f78f0b4401a3111ea51431732372171714_c8103b2bd1287.jpeg', description: '鱼' },
+            { src: 'https://pic2.ziyuan.wang/user/tanxifei/2025/01/Elevatorpedia_main_page_banner_addda0985debb.png', description: '兔子' },
+            { src: 'https://pic2.ziyuan.wang/user/tanxifei/2025/01/Image_1736668032195_0164d7590bc5e.png', description: '马' }
         ];
 
         // 随机抽取4张图片（图片总数可能变化，但始终确保数量>4）
