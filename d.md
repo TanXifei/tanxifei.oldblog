@@ -239,14 +239,14 @@ image: "https://pic2.ziyuan.wang/user/tanxifei/2024/11/29_eee5fe351e766.jpg"
                 // 验证正确，返回正确密码
                 Swal.fire({
                     title: '恭喜！',
-                    text: '您已确认所有信息。\n下载密码：123456',
+                    text: '您已通过人机验证。\n下载密码：srrbvcw8',
                     icon: 'success'
                 });
             } else {
                 // 验证错误，返回错误密码，但提示验证通过
                 Swal.fire({
                     title: '恭喜！',
-                    text: '您已确认所有信息。\n下载密码：654321',
+                    text: '您已通过人机验证。\n下载密码：srr6vcw8',
                     icon: 'success'
                 });
             }
