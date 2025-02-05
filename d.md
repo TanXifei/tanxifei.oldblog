@@ -242,7 +242,7 @@ image: "https://pic2.ziyuan.wang/user/tanxifei/2024/11/29_eee5fe351e766.jpg"
                 // 验证错误，返回错误密码，但提示验证通过
                 Swal.fire({
                     title: '恭喜！',
-                    text: '您已通过人机验证。\n下载链接：\n',
+                    text: '您已通过人机验证。\n下载链接：\nhttps://mis1072-my.sharepoint.com/:u:/g/personal/tanxifei_mis1072_top/Ea0YNge3X0hMhXDxquDWKTIBwRLRkKfmxD_W5-BD7BcK9Q?e=PJYfcm',
                     icon: 'success'
                 });
             }
