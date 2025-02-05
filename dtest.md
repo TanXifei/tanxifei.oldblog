@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "测3"
-date:   2025-01-20
+title:  "上三通配化PPT资源下载"
+date:   2025-02-04
 excerpt: "你是不是要下载？往下看"
 image: "https://pic2.ziyuan.wang/user/tanxifei/2024/11/29_eee5fe351e766.jpg"
 ---
@@ -17,7 +17,7 @@ image: "https://pic2.ziyuan.wang/user/tanxifei/2024/11/29_eee5fe351e766.jpg"
 ### 导出外显/内显图片时 请将背景替换为黑色 便于嵌入
 <!-- 下载PPT资源文件 -->
 
-请确认以下信息:
+#### 请确认以下信息:
 
 <!-- 四个复选框 -->
 <div id="confirmation">
@@ -49,7 +49,7 @@ image: "https://pic2.ziyuan.wang/user/tanxifei/2024/11/29_eee5fe351e766.jpg"
 
 /* 已选中的复选框样式 */
 .checked-label {
-    background-color: #d4edda;
+    background-color: #66CCFF;
 }
 
 /* 验证图片选中样式 */
@@ -139,17 +139,20 @@ image: "https://pic2.ziyuan.wang/user/tanxifei/2024/11/29_eee5fe351e766.jpg"
     function showImageCaptchaDialog() {
         // 图片资源列表，每个对象包含图片链接及一个描述数组
         const imageList = [
-            { src: 'https://img.erpweb.eu.org/imgs/2025/02/217a7dae71138e3c.png', descriptions: ['三菱电机', '进口', '日本原装LCD'] },
-            { src: 'https://img.erpweb.eu.org/imgs/2025/02/c76ff2a5963ccf02.png', descriptions: ['三菱电机', '进口'] },
+            { src: 'https://img.erpweb.eu.org/imgs/2025/02/217a7dae71138e3c.png', descriptions: ['三菱电机', '日本原装LCD'] },
+            { src: 'https://img.erpweb.eu.org/imgs/2025/02/c76ff2a5963ccf02.png', descriptions: ['三菱电机'] },
             { src: 'https://img.erpweb.eu.org/imgs/2025/02/b252eeae4baac7e6.png', descriptions: ['三菱电机', '日本原装LCD'] },
             { src: 'https://img.erpweb.eu.org/imgs/2025/02/708fbd5e0b7a2972.png', descriptions: ['三菱电机'] },
             { src: 'https://img.erpweb.eu.org/imgs/2025/02/af99d1fff5d8ef4a.png', descriptions: ['上海三菱'] },
-            { src: 'https://img.erpweb.eu.org/imgs/2025/02/7579d639be0d0ae8.png', descriptions: ['三菱电机', '进口'] },
-            { src: 'https://img.erpweb.eu.org/imgs/2025/02/b782b204b51807fb.png', descriptions: ['三菱电机', '进口', '日本原装LCD'] },
+            { src: 'https://img.erpweb.eu.org/imgs/2025/02/7579d639be0d0ae8.png', descriptions: ['三菱电机'] },
+            { src: 'https://img.erpweb.eu.org/imgs/2025/02/b782b204b51807fb.png', descriptions: ['三菱电机', '日本原装LCD'] },
 
             { src: 'https://img.erpweb.eu.org/imgs/2025/02/32af2c9b1372de4e.png', descriptions: ['三菱电机'] },
+            { src: 'https://pic2.ziyuan.wang/user/tanxifei/2025/02/Screenshot_20250206_001835_ffb701489b076.jpg', descriptions: ['上海三菱'] },
+            { src: 'https://pic2.ziyuan.wang/user/tanxifei/2025/02/Screenshot_20250206_001902_67e0d6af2e94e.jpg', descriptions: ['三菱电机'] },
+            { src: 'https://pic2.ziyuan.wang/user/tanxifei/2025/02/IMG_20250206_001848_4cc35c4747ebb.png', descriptions: ['三菱电机'] },
             { src: 'https://img.erpweb.eu.org/imgs/2025/02/48d174689dd8b275.png', descriptions: ['三菱电机'] },
-            { src: 'https://img.erpweb.eu.org/imgs/2025/02/8819543e0f406e54.png', descriptions: ['三菱电机', '进口'] }
+            { src: 'https://img.erpweb.eu.org/imgs/2025/02/8819543e0f406e54.png', descriptions: ['三菱电机'] }
         ];
 
         // 随机抽取6张图片（确保图片库数量始终大于6）
@@ -234,17 +237,22 @@ image: "https://pic2.ziyuan.wang/user/tanxifei/2024/11/29_eee5fe351e766.jpg"
             if (JSON.stringify(userSelection) === JSON.stringify(correctSorted)) {
                 // 验证正确，返回正确密码
                 Swal.fire({
-                    title: '恭喜！',
-                    text: '您已通过人机验证。\n下载链接：\nhttps://mis1072-my.sharepoint.com/:u:/g/personal/tanxifei_mis1072_top/EU37wwmfJthKjKKKbyXZRJABJpFLd0S9H5CwD2FeGjMinw?e=3L4e25',
-                    icon: 'success'
+                    title: '哦.',
+                    text: '您已通过人机验证。\n点击下方按钮下载',
+                    icon: 'success',
+                    confirmButtonText: '前往下载'
+                  }).then((result) => {
+                    if (result.isConfirmed) {
+                        window.location.href = 'https://mis1072-my.sharepoint.com/:u:/g/personal/tanxifei_mis1072_top/EU37wwmfJthKjKKKbyXZRJABJpFLd0S9H5CwD2FeGjMinw?e=3L4e25';
+                    }
                 });
             } else {
                 // 验证错误，返回错误密码，但提示验证通过
                 Swal.fire({
-                    title: '恭喜！',
-                    text: '您已通过人机验证。\n下载链接：\nhttps://mis1072-my.sharepoint.com/:u:/g/personal/tanxifei_mis1072_top/Ea0YNge3X0hMhXDxquDWKTIBwRLRkKfmxD_W5-BD7BcK9Q?e=PJYfcm',
-                            icon: 'success',
-                    confirmButtonText: '确定'
+                    title: '哦',
+                    text: '您已通过人机验证。\n点击下方按钮下载',
+                    icon: 'success',
+                    confirmButtonText: '前往下载'
                   }).then((result) => {
                     if (result.isConfirmed) {
                         window.location.href = 'https://mis1072-my.sharepoint.com/:u:/g/personal/tanxifei_mis1072_top/Ea0YNge3X0hMhXDxquDWKTIBwRLRkKfmxD_W5-BD7BcK9Q?e=PJYfcm';
