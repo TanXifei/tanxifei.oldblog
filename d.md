@@ -45,15 +45,46 @@ image: "https://pic2.ziyuan.wang/user/tanxifei/2024/11/29_eee5fe351e766.jpg"
 </button>
 
 <style>
-/* 初始样式 */
+/* 复选框样式 */
 .checkbox-label {
     padding: 5px;
     margin: 2px 0;
 }
 
-/* 已选中的样式 */
+/* 已选中的复选框样式 */
 .checked-label {
-    background-color: #d4edda; /* 绿色背景 */
+    background-color: #d4edda;
+}
+
+/* 验证图片选中样式 */
+.selected-image {
+    border: 2px solid green !important;
+}
+
+/* 图片容器样式：使用flexbox实现自动适应布局 */
+.captcha-image-container {
+    display: flex;
+    flex-wrap: wrap;           /* 允许换行 */
+    justify-content: space-between;  /* 图片均匀分布 */
+    gap: 10px;               /* 图片间距 */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* 每张图片占据相等的宽度，并自适应窗口大小 */
+.captcha-image {
+    flex: 1 1 30%;                  /* 每张图片占据30%的宽度，且在小屏幕上会自动调整 */
+    max-width: 150px;               /* 限制图片最大宽度 */
+    height: auto;                   /* 高度自适应 */
+    cursor: pointer;
+    object-fit: cover;              /* 保持图片比例 */
+    min-width: 120px;               /* 确保图片最小宽度，避免过小 */
+}
+
+/* 图片容器不超出视口宽度 */
+.captcha-image-container > div {
+    display: flex;
+    justify-content: center;
 }
 </style>
 
@@ -72,7 +103,7 @@ image: "https://pic2.ziyuan.wang/user/tanxifei/2024/11/29_eee5fe351e766.jpg"
         checkAllBoxes();
     }
 
-    // 检查是否所有复选框均被选中，若是则显示下载按钮并启动人机验证
+    // 检查所有复选框是否均已勾选，若是则显示下载按钮并启动人机验证
     function checkAllBoxes() {
         var checkboxes = document.querySelectorAll('input[name="option"]');
         var button = document.getElementById('submitButton');
@@ -90,33 +121,42 @@ image: "https://pic2.ziyuan.wang/user/tanxifei/2024/11/29_eee5fe351e766.jpg"
         }
     }
 
-    // 用于记录当前用户选择的图片索引
-    let selectedImageIndex = null;
+    // 存储当前验证对话框中用户选中的图片索引数组
+    let selectedIndices = [];
 
-    // 点击图片时的处理函数，高亮显示所选图片
-    function selectImage(index) {
-        const images = document.querySelectorAll('.captcha-image');
-        images.forEach((img) => {
-            img.style.border = '2px solid transparent';
-        });
-        const selectedImg = document.getElementById(`img-${index}`);
-        selectedImg.style.border = '2px solid green';
-        selectedImageIndex = index;
+    // 用户点击图片时的处理函数：实现多选/反选，并更新样式
+    function toggleImageSelection(index) {
+        const imgElem = document.getElementById(`img-${index}`);
+        const pos = selectedIndices.indexOf(index);
+        if (pos === -1) {
+            // 未选中则添加
+            selectedIndices.push(index);
+            imgElem.classList.add('selected-image');
+        } else {
+            // 已选中则取消选中
+            selectedIndices.splice(pos, 1);
+            imgElem.classList.remove('selected-image');
+        }
     }
 
     // 人机验证函数
     function showImageCaptchaDialog() {
-        // 图片资源列表（示例内容，请替换为实际链接和描述）
+        // 图片资源列表，每个对象包含图片链接及一个描述数组
         const imageList = [
-            { src: 'https://pic2.ziyuan.wang/user/tanxifei/2025/02/IMG_20250205_214507_a87f7a55dbe9f.jpg', description: '猫' },
-            { src: 'https://pic2.ziyuan.wang/user/tanxifei/2025/02/IMG_20250205_214507_a87f7a55dbe9f.jpg', description: '狗' },
-            { src: 'https://pic2.ziyuan.wang/user/tanxifei/2025/02/IMG_20250205_214507_a87f7a55dbe9f.jpg', description: '鸟' },
-            { src: 'https://pic2.ziyuan.wang/user/tanxifei/2025/02/IMG_20250205_214507_a87f7a55dbe9f.jpg', description: '鱼' },
-            { src: 'https://pic2.ziyuan.wang/user/tanxifei/2025/02/IMG_20250205_214507_a87f7a55dbe9f.jpg', description: '兔子' },
-            { src: 'https://pic2.ziyuan.wang/user/tanxifei/2025/02/IMG_20250205_214507_a87f7a55dbe9f.jpg', description: '马' }
+            { src: 'https://img.erpweb.eu.org/imgs/2025/02/217a7dae71138e3c.png', descriptions: ['三菱电机', '进口', '日本原装LCD'] },
+            { src: 'https://img.erpweb.eu.org/imgs/2025/02/c76ff2a5963ccf02.png', descriptions: ['三菱电机', '进口'] },
+            { src: 'https://img.erpweb.eu.org/imgs/2025/02/b252eeae4baac7e6.png', descriptions: ['三菱电机', '日本原装LCD'] },
+            { src: 'https://img.erpweb.eu.org/imgs/2025/02/708fbd5e0b7a2972.png', descriptions: ['三菱电机'] },
+            { src: 'https://img.erpweb.eu.org/imgs/2025/02/af99d1fff5d8ef4a.png', descriptions: ['上海三菱'] },
+            { src: 'https://img.erpweb.eu.org/imgs/2025/02/7579d639be0d0ae8.png', descriptions: ['三菱电机', '进口'] },
+            { src: 'https://img.erpweb.eu.org/imgs/2025/02/b782b204b51807fb.png', descriptions: ['三菱电机', '进口', '日本原装LCD'] },
+
+            { src: 'https://img.erpweb.eu.org/imgs/2025/02/32af2c9b1372de4e.png', descriptions: ['三菱电机'] },
+            { src: 'https://img.erpweb.eu.org/imgs/2025/02/48d174689dd8b275.png', descriptions: ['三菱电机'] },
+            { src: 'https://img.erpweb.eu.org/imgs/2025/02/8819543e0f406e54.png', descriptions: ['三菱电机', '进口'] }
         ];
 
-        // 随机抽取4张图片（图片总数可能变化，但始终确保数量>4）
+        // 随机抽取6张图片（确保图片库数量始终大于6）
         function getRandomImages(arr, n) {
             let copy = arr.slice();
             let result = [];
@@ -127,20 +167,49 @@ image: "https://pic2.ziyuan.wang/user/tanxifei/2024/11/29_eee5fe351e766.jpg"
             }
             return result;
         }
-        const captchaImages = getRandomImages(imageList, 4);
+        const captchaImages = getRandomImages(imageList, 6);
 
-        // 随机从这4张图片中选择一张作为目标，获取其描述
-        const targetIndex = Math.floor(Math.random() * 4);
-        const targetDescription = captchaImages[targetIndex].description;
+        // 从6张图片中随机选择1张，并抽取1或2个描述作为提问条件
+        const randomImage = captchaImages[Math.floor(Math.random() * captchaImages.length)];
+        const targetDescriptions = [];
 
-        // 重置选择记录
-        selectedImageIndex = null;
+        // 从选中的图片的描述中随机抽取1到2个描述
+        targetDescriptions.push(randomImage.descriptions[Math.floor(Math.random() * randomImage.descriptions.length)]);
+        if (Math.random() < 0.5 && randomImage.descriptions.length > 1) {
+            // 如果描述有多个并且随机选择了两个描述
+            const secondDesc = randomImage.descriptions.find(d => d !== targetDescriptions[0]);
+            targetDescriptions.push(secondDesc);
+        }
+
+        // 计算正确答案的图片索引集合：
+        // 正确图片是指其描述数组包含【所有】目标描述
+        let correctIndices = [];
+        captchaImages.forEach((img, index) => {
+            let hasAll = targetDescriptions.every(desc => img.descriptions.includes(desc));
+            if (hasAll) {
+                correctIndices.push(index);
+            }
+        });
+
+        // 重置用户选择记录
+        selectedIndices = [];
 
         // 构造验证对话框的HTML内容
-        let htmlContent = `<p>请选择描述为：“${targetDescription}”的图片</p>`;
-        htmlContent += '<div style="display: flex; gap: 10px;">';
+        let questionText = '请选择所有包含描述：';
+        if (targetDescriptions.length === 1) {
+            questionText += `“${targetDescriptions[0]}”的图片`;
+        } else {
+            questionText += `“${targetDescriptions.join('” 和 “')}”的图片`;
+        }
+        let htmlContent = `<p>${questionText}</p>`;
+        htmlContent += '<div class="captcha-image-container">';
         captchaImages.forEach((img, index) => {
-            htmlContent += `<img src="${img.src}" alt="${img.description}" class="captcha-image" style="cursor: pointer; border: 2px solid transparent;" onclick="selectImage(${index})" id="img-${index}">`;
+            htmlContent += `
+                <div class="captcha-image-container" style="cursor: pointer;" onclick="toggleImageSelection(${index})">
+                    <img src="${img.src}" alt="${img.descriptions.join(', ')}" class="captcha-image" id="img-${index}">
+                    <!-- 已删除描述文本部分 -->
+                </div>
+            `;
         });
         htmlContent += '</div>';
 
@@ -152,15 +221,9 @@ image: "https://pic2.ziyuan.wang/user/tanxifei/2024/11/29_eee5fe351e766.jpg"
             confirmButtonText: '提交',
             cancelButtonText: '取消',
             preConfirm: () => {
-                if (selectedImageIndex === null) {
-                    Swal.showValidationMessage('请先选择一张图片');
-                    return;
-                }
-                // 返回用户所选图片的描述，用于后续比对
-                return captchaImages[selectedImageIndex].description;
+                return selectedIndices;
             }
         }).then((result) => {
-            // 若用户点击取消，则弹出提示重新验证
             if (result.dismiss === Swal.DismissReason.cancel) {
                 Swal.fire({
                     title: '验证取消',
@@ -169,16 +232,18 @@ image: "https://pic2.ziyuan.wang/user/tanxifei/2024/11/29_eee5fe351e766.jpg"
                 });
                 return;
             }
-            // 比对用户所选图片描述与目标描述是否一致
-            if (result.value === targetDescription) {
-                // 选择正确，返回正确密码
+            // 对用户选中的索引数组和正确答案数组进行排序后比对
+            const userSelection = result.value.sort((a, b) => a - b);
+            const correctSorted = correctIndices.sort((a, b) => a - b);
+            if (JSON.stringify(userSelection) === JSON.stringify(correctSorted)) {
+                // 验证正确，返回正确密码
                 Swal.fire({
                     title: '恭喜！',
                     text: '您已确认所有信息。\n下载密码：123456',
                     icon: 'success'
                 });
             } else {
-                // 选择错误，返回错误密码，但仍提示验证通过
+                // 验证错误，返回错误密码，但提示验证通过
                 Swal.fire({
                     title: '恭喜！',
                     text: '您已确认所有信息。\n下载密码：654321',
@@ -187,9 +252,5 @@ image: "https://pic2.ziyuan.wang/user/tanxifei/2024/11/29_eee5fe351e766.jpg"
             }
         });
     }
-
-    // 页面加载完毕后检查复选框状态
-    window.onload = function() {
-        checkAllBoxes();
-    }
 </script>
+
