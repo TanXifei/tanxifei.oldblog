@@ -211,7 +211,7 @@ image: "https://pic2.ziyuan.wang/user/tanxifei/2024/11/29_eee5fe351e766.jpg"
 
         // 使用SweetAlert2展示人机验证对话框
         Swal.fire({
-            title: '人机验证',
+            title: '是人是机 你自己说了算',
             html: htmlContent,
             showCancelButton: true,
             confirmButtonText: '提交',
