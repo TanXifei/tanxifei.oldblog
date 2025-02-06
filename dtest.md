@@ -6,7 +6,10 @@ excerpt: "你是不是要下载？往下看"
 image: "https://pic2.ziyuan.wang/user/tanxifei/2024/11/29_eee5fe351e766.jpg"
 ---
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1445627763&auto=1&height=66"></iframe>
+<audio controls autoplay>
+  <source src="https://m801.music.126.net/20250207004335/d6e9c05a47452a45d2006573c6006b8e/jdymusic/obj/w5zDlMODwrDDiGjCn8Ky/2409337666/9e86/ecde/a791/d893843cfac4b08ff727bb0b871267c1.flac?vuutv=ILkueA6TzDaVaJfQubRtiHlhXTO7BC4kGVhVLf1MtvzflfTiZ1ibmsOkTYJjv3A9wJvns44SH0Ic1hljqkEqLaiwlUDK6AjuErzdKZVHJSA=" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 # 请务必仔细阅读说明
 
 ## 工程文件夹整体打包 不提供使用方法 请自行研究
