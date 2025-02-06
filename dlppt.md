@@ -145,6 +145,7 @@ image: "https://pic2.ziyuan.wang/user/tanxifei/2024/11/29_eee5fe351e766.jpg"
             { src: 'https://img.erpweb.eu.org/imgs/2025/02/b782b204b51807fb.png', descriptions: ['三菱电机', '日本原装LCD'] },
 
             { src: 'https://img.erpweb.eu.org/imgs/2025/02/32af2c9b1372de4e.png', descriptions: ['三菱电机'] },
+            { src: 'https://pic2.ziyuan.wang/user/tanxifei/2025/02/Image_1738854477282_af33844afad99.png', descriptions: ['三菱电机'] },
             { src: 'https://pic2.ziyuan.wang/user/tanxifei/2025/02/Screenshot_20250206_001835_ffb701489b076.jpg', descriptions: ['上海三菱'] },
             { src: 'https://pic2.ziyuan.wang/user/tanxifei/2025/02/Screenshot_20250206_001902_67e0d6af2e94e.jpg', descriptions: ['三菱电机'] },
             { src: 'https://pic2.ziyuan.wang/user/tanxifei/2025/02/IMG_20250206_001848_4cc35c4747ebb.png', descriptions: ['三菱电机'] },
@@ -191,7 +192,7 @@ image: "https://pic2.ziyuan.wang/user/tanxifei/2024/11/29_eee5fe351e766.jpg"
         selectedIndices = [];
 
         // 构造验证对话框的HTML内容
-        let questionText = '请选择所有包含描述：';
+        let questionText = '请选择所有包含描述:';
         if (targetDescriptions.length === 1) {
             questionText += `“${targetDescriptions[0]}”的图片`;
         } else {
@@ -222,8 +223,8 @@ image: "https://pic2.ziyuan.wang/user/tanxifei/2024/11/29_eee5fe351e766.jpg"
         }).then((result) => {
             if (result.dismiss === Swal.DismissReason.cancel) {
                 Swal.fire({
-                    title: '验证取消',
-                    text: '请重新完成验证。',
+                    title: '哦',
+                    text: '你未通过人机验证，请重新完成验证',
                     icon: 'error'
                 });
                 return;
