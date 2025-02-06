@@ -235,7 +235,7 @@ image: "https://pic2.ziyuan.wang/user/tanxifei/2024/11/29_eee5fe351e766.jpg"
                 // 验证正确，返回正确密码
                 Swal.fire({
                     title: '哦.',
-                    text: '您已通过人机验证。\n点击下方按钮下载',
+                    text: '您已通过人机验证，\n点击下方按钮下载',
                     icon: 'success',
                     confirmButtonText: '前往下载'
                   }).then((result) => {
