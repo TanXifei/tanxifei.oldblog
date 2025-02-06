@@ -1,10 +1,15 @@
-9---
+---
 layout: post
 title:  "上三通配化PPT资源下载"
 date:   2025-02-04
 excerpt: "你是不是要下载？往下看"
 image: "https://pic2.ziyuan.wang/user/tanxifei/2024/11/29_eee5fe351e766.jpg"
 ---
+<center><h3>要一起听吗 我觉得挺好听</h3></center>
+<audio controls autoplay>
+  <source src="https://m701.music.126.net/20250207004524/9a1714c2ca24b97ffcbe99167a19ac3a/jdymusic/obj/w5zDlMODwrDDiGjCn8Ky/2409336713/899e/ca4d/b74e/556863731cd0d692cd517a93fcbaf748.mp3?vuutv=het6AuiX7JwqWetyO5Rm+PX6MA8SHMYZWOSgEdgfsuNGqNYGoun2G/3e+lJfHsBe21LmUKKVmkzYxkftuPRt/wmjqj5NiFL34piLP6rOW5Y=" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 
 # 请务必仔细阅读说明
 为了过滤部分盗图炫耀的不明生物 我们添加了人机验证 你的选择将决定你获得的内容
@@ -260,8 +265,3 @@ image: "https://pic2.ziyuan.wang/user/tanxifei/2024/11/29_eee5fe351e766.jpg"
         });
     }
 </script>
-
-<audio controls autoplay>
-  <source src="https://m701.music.126.net/20250207004524/9a1714c2ca24b97ffcbe99167a19ac3a/jdymusic/obj/w5zDlMODwrDDiGjCn8Ky/2409336713/899e/ca4d/b74e/556863731cd0d692cd517a93fcbaf748.mp3?vuutv=het6AuiX7JwqWetyO5Rm+PX6MA8SHMYZWOSgEdgfsuNGqNYGoun2G/3e+lJfHsBe21LmUKKVmkzYxkftuPRt/wmjqj5NiFL34piLP6rOW5Y=" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
