@@ -152,6 +152,8 @@ image: "https://pic2.ziyuan.wang/user/tanxifei/2024/11/29_eee5fe351e766.jpg"
             { src: 'https://img.erpweb.eu.org/imgs/2025/02/32af2c9b1372de4e.png', descriptions: ['三菱电机'] },
             { src: 'https://pic2.ziyuan.wang/user/tanxifei/2025/02/Image_1738858046436_42e8c0088297c.jpg', descriptions: ['三菱电机'] },
             { src: 'https://pic2.ziyuan.wang/user/tanxifei/2025/02/Screenshot_20250206_001835_ffb701489b076.jpg', descriptions: ['上海三菱'] },
+            { src: 'https://pic2.ziyuan.wang/user/tanxifei/2025/02/IMG_20250207_160203_357fc6f02504b.png', descriptions: ['三菱电机'] },
+            { src: 'https://pic2.ziyuan.wang/user/tanxifei/2025/02/IMG_20250207_155716_00059c4e685dd.jpg', descriptions: ['三菱电机'] },
             { src: 'https://pic2.ziyuan.wang/user/tanxifei/2025/02/Screenshot_20250206_001902_67e0d6af2e94e.jpg', descriptions: ['三菱电机'] },
             { src: 'https://pic2.ziyuan.wang/user/tanxifei/2025/02/IMG_20250206_001848_4cc35c4747ebb.png', descriptions: ['三菱电机'] },
             { src: 'https://img.erpweb.eu.org/imgs/2025/02/48d174689dd8b275.png', descriptions: ['三菱电机'] },
