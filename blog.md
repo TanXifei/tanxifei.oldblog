@@ -7,8 +7,7 @@ sitemap:
     lastmod: 2017-11-02
     changefreq: weekly
 ---
-
-
+<head>
     <title>网站以迁移。</title>
     <script type="text/javascript">
         // 在页面加载完成后执行
@@ -24,3 +23,4 @@ sitemap:
             }
         };
     </script>
+</head>
