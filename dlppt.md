@@ -11,6 +11,7 @@ image: "https://pic2.ziyuan.wang/user/tanxifei/2024/11/29_eee5fe351e766.jpg"
   Your browser does not support the audio element.
 </audio>
 
+# 被恶意攻击 onedrive已封禁 暂停开放下载
 # 请务必仔细阅读说明
 为了过滤部分盗图炫耀的不明生物 我们添加了人机验证 你的选择将决定你获得的内容
 ## 工程文件夹整体打包 不提供使用方法 请自行研究
@@ -243,7 +244,7 @@ image: "https://pic2.ziyuan.wang/user/tanxifei/2024/11/29_eee5fe351e766.jpg"
                 // 验证正确，返回正确密码
                 Swal.fire({
                     title: '哦.',
-                    text: '您已通过人机验证，\n点击下方按钮下载',
+                    text: '您已通过人机验证，\n但是onedrive已因为被恶意攻击被封禁',
                     icon: 'success',
                     confirmButtonText: '前往下载'
                   }).then((result) => {
@@ -255,14 +256,11 @@ image: "https://pic2.ziyuan.wang/user/tanxifei/2024/11/29_eee5fe351e766.jpg"
                 // 验证错误，返回错误密码，但提示验证通过
                 Swal.fire({
                     title: '哦',
-                    text: '您已通过人机验证。\n点击下方按钮下载',
-                    icon: 'success',
+                    text: '您个人机。',
+                    icon: 'error',
                     confirmButtonText: '前往下载'
-                  }).then((result) => {
-                    if (result.isConfirmed) {
-                        window.location.href = 'https://mis1072-my.sharepoint.com/:u:/g/personal/tanxifei_mis1072_top/Ea0YNge3X0hMhXDxquDWKTIBwRLRkKfmxD_W5-BD7BcK9Q?e=PJYfcm';
-                    }
-                });
+                  });
+                  return;
             }
         });
     }
