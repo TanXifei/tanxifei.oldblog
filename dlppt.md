@@ -258,7 +258,7 @@ image: "https://pic2.ziyuan.wang/user/tanxifei/2024/11/29_eee5fe351e766.jpg"
                     title: '哦',
                     text: '您个人机。',
                     icon: 'error',
-                    confirmButtonText: '前往下载'
+                    confirmButtonText: 'I am not a robot.'
                   });
                   return;
             }
